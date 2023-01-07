@@ -8,13 +8,13 @@
   --secondaryColor: #074452;
   --activeWarning: #80ff00;
   --colorRed: #FF5151;
-  --colorOrange: #FFAA47
-  --colorDarkOrange: #FF9900
-  --colorPurple: #DB00FF
-  --colorDarkRed: #892323
-  --colorDarkBrown: #523407
-  --colorNavy: #072152
-  --colorDarkPurple: #310752
+  --colorOrange: #FFAA47;
+  --colorDarkOrange: #FF9900;
+  --colorPurple: #DB00FF;
+  --colorDarkRed: #892323;
+  --colorDarkBrown: #523407;
+  --colorNavy: #072152;
+  --colorDarkPurple: #310752;
 }
 
 @font-face {
@@ -36,7 +36,11 @@
   }
 
   .card {
-    @apply rounded-xl bg-black/50 px-4 py-2
+    @apply min-w-[375px] min-h-[250px] rounded-xl bg-black/50 px-4 py-2
+  }
+
+  .title {
+    @apply text-[11px]
   }
 }
 
