@@ -21,16 +21,16 @@
   <body>
     <!-- Header -->
     <header class="w-full text-darkGrey">
-      <nav class="w-[80%] mx-auto flex justify-end items-center py-6">
-        <div class="menu text-[11px]">
+      <nav class="w-[90%] mx-auto flex justify-end items-center py-6">
+        <div class="menu text-[12px] mr-8">
           <ul class="flex">
-            <li class="mx-2"><a href="" class="text-white">HOME</a></li>
-            <li class="mx-2"><a href="">PROFILE MANAGEMENT</a></li>
-            <li class="mx-2"><a href="">DATA SEARCH</a></li>
-            <li class="mx-2"><a href="">ATTACK MONITORING</a></li>
-            <li class="mx-2"><a href="">AVATAR MANAGEMENT</a></li>
-            <li class="mx-2"><a href="">REPORT</a></li>
-            <li class="mx-2"><a href="">AUDIT TRAILS</a></li>
+            <li class="mx-4"><a href="" class="text-white">HOME</a></li>
+            <li class="mx-4"><a href="">PROFILE MANAGEMENT</a></li>
+            <li class="mx-4"><a href="">DATA SEARCH</a></li>
+            <li class="mx-4"><a href="">ATTACK MONITORING</a></li>
+            <li class="mx-4"><a href="">AVATAR MANAGEMENT</a></li>
+            <li class="mx-4"><a href="">REPORT</a></li>
+            <li class="mx-4"><a href="">AUDIT TRAILS</a></li>
           </ul>
         </div>
         <div class="user relative flex justify-between">
@@ -56,7 +56,7 @@
 
     <!-- User Profile -->
     <section id="user" class="user mb-4">
-      <div class="flex w-[80%] mx-auto items-center">
+      <div class="flex w-[90%] mx-auto items-center">
         <div class="user-photo">
           <img
             src="./images/userprofile.png"
@@ -75,7 +75,9 @@
               <div
                 class="user-bot-account relative flex gap-2 text-darkGrey mb-6"
               >
-                <p class="border border-darkGrey px-4 rounded-full text-[10px]">
+                <p
+                  class="active border border-darkGrey px-4 rounded-full text-[10px]"
+                >
                   bot account-1
                 </p>
                 <p class="border border-darkGrey px-4 rounded-full text-[10px]">
@@ -111,10 +113,10 @@
     <!-- End User Profile -->
 
     <!-- Content -->
-    <section id="content" class="content">
-      <div class="w-[80%] flex items-center mx-auto text-white">
+    <section id="content" class="content mb-4">
+      <div class="w-[90%] flex items-center mx-auto text-white">
         <!-- Content Today -->
-        <div class="content-today w-1/3 card mr-5">
+        <div class="content-today w-1/3 card mr-5 min-w-[380px]">
           <div class="content-head flex justify-between items-center mb-2">
             <h5 class="text-xs">Today Top Topic</h5>
             <img src="./images/hot-topic.svg" alt="hot-topic" />
@@ -245,7 +247,7 @@
         <!-- End Content Today -->
 
         <!-- Content Weekly -->
-        <div class="content-weeekly card mr-5">
+        <div class="content-weeekly card max-w-[380px] min-h-[250px] mr-5">
           <div class="content-head flex justify-between items-center mb-2">
             <h5 class="text-xs">Weekly Top Data Leak</h5>
             <img src="./images/topdataleak.svg" alt="data-leak" />
@@ -309,8 +311,11 @@
             <button class="btn text-colorPrimary px-3 py-1 flex items-center">
               <img src="./images/link.svg" alt="link" class="mr-1" /> Visit Link
             </button>
-            <button class="btn text-white border-white px-3 py-1 flex items-center">
-              <img src="./images/download.svg" alt="link" class="mr-1" /> Download
+            <button
+              class="btn text-white border-white px-3 py-1 flex items-center"
+            >
+              <img src="./images/download.svg" alt="link" class="mr-1" />
+              Download
             </button>
           </div>
         </div>
@@ -318,5 +323,130 @@
       </div>
     </section>
     <!-- End Content -->
+
+    <!-- Profile Monitoring -->
+    <section id="profile" class="profile">
+      <div class="w-[90%] flex mx-auto items-center text-white">
+        <!-- Profile Info -->
+        <div class="content-profile w-1/3 card max-h-[200px] mr-5">
+          <div class="content-head flex justify-between items-center mb-8">
+            <h5 class="text-xs">Profile Monitoring</h5>
+            <img src="./images/profilemonitoring.svg" alt="hot-topic" />
+          </div>
+          <div
+            class="profile-info w-full flex justify-between items-center mb-2 relative"
+          >
+            <div class="profile-link">
+              <button
+                class="btn border-darkGrey w-[120px] px-4 py-2 text-[10px]"
+              >
+                ZackXiX65
+              </button>
+            </div>
+            <div class="pr-4">
+              <button
+                class="text-[10px] text-colorPrimary border-b border-b-secondaryColor"
+              >
+                Go Details <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+          <p class="text-[9px] text-darkGrey mb-4">
+            During online on http://www.forum...
+          </p>
+          <div
+            class="profile-info w-full flex justify-between items-center mb-2 relative"
+          >
+            <div class="profile-link">
+              <button
+                class="btn active border-darkGrey w-[120px] px-4 py-2 text-[10px]"
+              >
+                Bicarakebuka11
+              </button>
+            </div>
+            <div class="pr-4">
+              <button
+                class="text-[10px] text-colorPrimary border-b border-b-secondaryColor"
+              >
+                Go Details <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+          <p class="text-[9px] text-darkGrey">
+            Latest online 10 Oct 2022 10:11 PM
+          </p>
+        </div>
+        <!-- End Profile Info -->
+        <!-- Latest Data Leaks -->
+        <div class="content-latest w-1/3 card mr-5 max-h-[200px]">
+          <div class="content-head flex justify-between items-center mb-8">
+            <h5 class="text-xs">Latest Data Leaks</h5>
+            <img src="./images/lastetsdataleak.svg" alt="hot-topic" />
+          </div>
+          <div class="links w-full text-[9px]">
+            <p class="mb-4">
+              Goverment <span class="ml-12 mr-4">|</span
+              ><span class="text-darkGrey">
+                http://www.disdukcapil.com/datasource...</span
+              >
+            </p>
+            <p class="mb-4">
+              Goverment <span class="ml-12 mr-4">|</span
+              ><span class="text-darkGrey">
+                http://www.dirjenpajak.com/datasource...</span
+              >
+            </p>
+            <p class="mb-4">
+              Fintech Nasional <span class="ml-6 mr-4">|</span
+              ><span class="text-darkGrey">
+                http://www.bayaronline.com/datasource...</span
+              >
+            </p>
+            <p class="mb-4">
+              Marketplace <span class="ml-10 mr-4">|</span
+              ><span class="text-darkGrey">
+                http://www.marketplace1.com/datasource...</span
+              >
+            </p>
+            <p class="mb-4">
+              Marketplace <span class="ml-10 mr-4">|</span
+              ><span class="text-darkGrey">
+                http://www.marketplace2.com/datasource...</span
+              >
+            </p>
+          </div>
+        </div>
+        <!-- End Latest Data Leaks -->
+        <!-- Top Avatar Mention -->
+        <div class="content-avatar w-1/3 card mr-5 min-h-[200px] max-w-[250px]">
+          <div class="content-head flex justify-between items-center mb-8">
+            <h5 class="text-xs">Top Avatar Mention</h5>
+            <img src="./images/avatarmention.svg" alt="hot-topic" />
+          </div>
+          <div class="avatar-id w-full flex justify-between text-[9px] mb-1">
+            <p class="px-2 py-1 bg-colorRed rounded-full">ZackXiX65</p>
+            <p>366+ mention</p>
+          </div>
+          <div class="avatar-id w-full flex justify-between text-[9px] mb-1">
+            <p class="px-2 py-1 bg-secondaryColor rounded-full">ecoMock</p>
+            <p>205+ mention</p>
+          </div>
+          <div class="avatar-id w-full flex justify-between text-[9px] mb-1">
+            <p class="px-2 py-1 bg-colorDarkBrown rounded-full">national297freedom</p>
+            <p>194+ mention</p>
+          </div>
+          <div class="avatar-id w-full flex justify-between text-[9px] mb-1">
+            <p class="px-2 py-1 bg-colorNavy rounded-full">Bicarakebuka11</p>
+            <p>76+ mention</p>
+          </div>
+          <div class="avatar-id w-full flex justify-between text-[9px] mb-1">
+            <p class="px-2 py-1 bg-colorDarkPurple rounded-full">Trackersedap</p>
+            <p>22+ mention</p>
+          </div>
+        </div>
+        <!-- End Top Avatar Mention -->
+      </div>
+    </section>
+    <!-- End Profile Monitoring -->
   </body>
 </html>
