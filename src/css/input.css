@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --systemColor: #000;
+  --colorPrimary: #53BEBE;
+  --secondaryColor: #074452;
+  --activeWarning: #80ff00;
+  --colorRed: #FF5151;
+  --colorOrange: #FFAA47
+  --colorDarkOrange: #FF9900
+  --colorPurple: #DB00FF
+  --colorDarkRed: #892323
+  --colorDarkBrown: #523407
+  --colorNavy: #072152
+  --colorDarkPurple: #310752
+}
+
+@font-face {
+  font-family: SFPro;
+  src: url(../../public/images/SF-Pro.ttf);
+}
+
+@layer base {
+  .notif-count {
+    @apply text-[8px] text-white flex justify-center items-center
+  }
+
+  .dot-green {
+    @apply absolute w-[8px] h-[8px] bg-activeWarning rounded-full bottom-0 right-[8px]
+  }
+
+  .btn {
+    @apply rounded-full border border-colorPrimary bg-transparent
+  }
+
+  .card {
+    @apply rounded-xl bg-black/50 px-4 py-2
+  }
+}
+
+body {
+  font-family: SFPro;
+  background-color: var(--systemColor);
+  background-image: url('../../public/images/background.png');
+}
+
+.menu ul li a {
+  transition: all 0.3s ease;
+}
+
+.menu ul li a:hover {
+  color: white;
+}
+
+.user img:nth-child(1)::after {
+  content: "";
+  background-color: var(--colorRed) ;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+}
+
+.notif-count {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  background-color: var(--colorRed);
+  border-radius: 50%;
+  padding: 2px;
+  left: 12px;
+}
+
+/* .dot-green {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: var(--activeWarning);
+  border-radius: 50%;
+  bottom: 0;
+  right: 8px;
+} */
+
+.user-bot-account p::before {
+  content: '';
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background-color: var(--activeWarning);
+  border-radius: 50%;
+  top: 40%;
+  left: 7px;
+}
+
+

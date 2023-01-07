@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>PT Semesta Arus Teknologi</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="w-full text-darkGrey">
+      <nav class="w-[80%] mx-auto flex justify-end items-center py-6">
+        <div class="menu text-[11px]">
+          <ul class="flex">
+            <li class="mx-2"><a href="" class="text-white">HOME</a></li>
+            <li class="mx-2"><a href="">PROFILE MANAGEMENT</a></li>
+            <li class="mx-2"><a href="">DATA SEARCH</a></li>
+            <li class="mx-2"><a href="">ATTACK MONITORING</a></li>
+            <li class="mx-2"><a href="">AVATAR MANAGEMENT</a></li>
+            <li class="mx-2"><a href="">REPORT</a></li>
+            <li class="mx-2"><a href="">AUDIT TRAILS</a></li>
+          </ul>
+        </div>
+        <div class="user relative flex justify-between">
+          <img
+            class="mx-2"
+            src="./images/notification.svg"
+            alt="notification"
+          />
+          <div class="notif-count">3</div>
+          <img class="mx-2" src="./images/settings.svg" alt="setting" />
+          <img
+            class="mx-2"
+            src="./images/userprofile.png"
+            width="35px"
+            height="35px"
+            alt="user profile"
+          />
+          <div class="dot-green"></div>
+        </div>
+      </nav>
+    </header>
+    <!-- End Header -->
+
+    <!-- User Profile -->
+    <section id="user" class="user mb-4">
+      <div class="flex w-[80%] mx-auto items-center">
+        <div class="user-photo">
+          <img
+            src="./images/userprofile.png"
+            width="100px"
+            height="100px"
+            alt="user profile"
+          />
+        </div>
+        <div class="user-wrapper flex justify-between text-white py-6 w-full">
+          <div class="user-profile flex justify-center items-center w-1/2 px-8">
+            <div class="user-info w-full">
+              <h3 class="text-2xl">Prayuda Prianggara</h3>
+              <p class="text-darkGrey text-xs mt-1 mb-3">
+                Latest login at 16 Oct 2022 10:24 PM
+              </p>
+              <div
+                class="user-bot-account relative flex gap-2 text-darkGrey mb-6"
+              >
+                <p class="border border-darkGrey px-4 rounded-full text-[10px]">
+                  bot account-1
+                </p>
+                <p class="border border-darkGrey px-4 rounded-full text-[10px]">
+                  bot account-2
+                </p>
+                <p class="border border-darkGrey px-4 rounded-full text-[10px]">
+                  bot account-3
+                </p>
+              </div>
+              <button class="btn bg-colorPrimary px-4 py-[6px] text-sm">
+                Edit User
+                <i class="fa-solid fa-arrow-right ml-4"></i>
+              </button>
+            </div>
+          </div>
+          <div class="user-search w-1/2">
+            <div class="w-full flex justify-end">
+              <div class="w-[80%] bg-black/50 rounded-full flex items-center">
+                <input
+                  type="text"
+                  placeholder="keyword search here"
+                  class="w-[65%] rounded-full text-xs px-3 py-2 text-darkGrey bg-transparent"
+                />
+                <button class="btn w-[35%] py-2 text-xs">
+                  Search<i class="fa-solid fa-magnifying-glass ml-6"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End User Profile -->
+
+    <!-- Content -->
+    <section id="content" class="content">
+      <div class="w-[80%] flex items-center justify-between mx-auto text-white">
+        <div class="content-today w-1/3 card mr-12">Today</div>
+        <div class="content-wekkly w-1/3 card">Weekly</div>
+        <div class="content-link w-1/3">Link</div>
+      </div>
+    </section>
+    <!-- End Content -->
+  </body>
+</html>
