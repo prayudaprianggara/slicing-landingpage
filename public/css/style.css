@@ -446,8 +446,6 @@ video {
 }
 
 .card {
-  min-height: 250px;
-  min-width: 375px;
   border-radius: 0.75rem;
   background-color: rgb(0 0 0 / 0.5);
   padding-left: 1rem;
@@ -563,9 +561,18 @@ video {
   margin-right: auto;
 }
 
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
 .mx-2 {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
+}
+
+.mr-8 {
+  margin-right: 2rem;
 }
 
 .mb-4 {
@@ -624,6 +631,22 @@ video {
   margin-right: 0.25rem;
 }
 
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+.ml-12 {
+  margin-left: 3rem;
+}
+
+.mr-4 {
+  margin-right: 1rem;
+}
+
+.ml-10 {
+  margin-left: 2.5rem;
+}
+
 .flex {
   display: flex;
 }
@@ -632,16 +655,32 @@ video {
   height: 1.25rem;
 }
 
+.max-h-\[200px\] {
+  max-height: 200px;
+}
+
+.min-h-\[250px\] {
+  min-height: 250px;
+}
+
+.min-h-\[200px\] {
+  min-height: 200px;
+}
+
 .w-full {
   width: 100%;
 }
 
-.w-\[80\%\] {
-  width: 80%;
+.w-\[90\%\] {
+  width: 90%;
 }
 
 .w-1\/2 {
   width: 50%;
+}
+
+.w-\[80\%\] {
+  width: 80%;
 }
 
 .w-\[65\%\] {
@@ -662,6 +701,22 @@ video {
 
 .w-5 {
   width: 1.25rem;
+}
+
+.w-\[120px\] {
+  width: 120px;
+}
+
+.min-w-\[380px\] {
+  min-width: 380px;
+}
+
+.max-w-\[380px\] {
+  max-width: 380px;
+}
+
+.max-w-\[250px\] {
+  max-width: 250px;
 }
 
 .items-center {
@@ -739,6 +794,18 @@ video {
   background-color: var(--colorRed);
 }
 
+.bg-secondaryColor {
+  background-color: var(--secondaryColor);
+}
+
+.bg-colorNavy {
+  background-color: var(--colorNavy);
+}
+
+.bg-colorDarkPurple {
+  background-color: var(--colorDarkPurple);
+}
+
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -784,8 +851,12 @@ video {
   padding-bottom: 0.25rem;
 }
 
-.text-\[11px\] {
-  font-size: 11px;
+.pr-4 {
+  padding-right: 1rem;
+}
+
+.text-\[12px\] {
+  font-size: 12px;
 }
 
 .text-2xl {
@@ -900,25 +971,34 @@ body {
   left: 12px;
 }
 
-/* .dot-green {
-  position: absolute;
-  width: 8px;
-  height: 8px;
-  background-color: var(--activeWarning);
-  border-radius: 50%;
-  bottom: 0;
-  right: 8px;
-} */
+.user-bot-account p {
+  position: relative;
+}
 
 .user-bot-account p::before {
   content: '';
   position: absolute;
   width: 5px;
   height: 5px;
-  background-color: var(--activeWarning);
+  background-color: #6B7280;
   border-radius: 50%;
   top: 40%;
   left: 7px;
+}
+
+.profile-link button {
+  position: relative;
+}
+
+.profile-link .active::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #6B7280;
+  border-radius: 50%;
+  left: 5%;
+  top: 35%;
 }
 
 
