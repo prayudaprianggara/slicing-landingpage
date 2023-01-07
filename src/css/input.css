@@ -36,7 +36,7 @@
   }
 
   .card {
-    @apply min-w-[375px] min-h-[250px] rounded-xl bg-black/50 px-4 py-2
+    @apply rounded-xl bg-black/50 px-4 py-2
   }
 
   .title {
@@ -76,25 +76,34 @@ body {
   left: 12px;
 }
 
-/* .dot-green {
-  position: absolute;
-  width: 8px;
-  height: 8px;
-  background-color: var(--activeWarning);
-  border-radius: 50%;
-  bottom: 0;
-  right: 8px;
-} */
+.user-bot-account p {
+  position: relative;
+}
 
 .user-bot-account p::before {
   content: '';
   position: absolute;
   width: 5px;
   height: 5px;
-  background-color: var(--activeWarning);
+  background-color: #6B7280;
   border-radius: 50%;
   top: 40%;
   left: 7px;
+}
+
+.profile-link button {
+  position: relative;
+}
+
+.profile-link .active::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #6B7280;
+  border-radius: 50%;
+  left: 5%;
+  top: 35%;
 }
 
 
